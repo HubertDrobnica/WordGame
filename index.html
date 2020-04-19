@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
+  <title>Word Game</title>
+</head>
+<body>
+  
+    <header>
+      <h1 class="header">Word Game</h1>
+    </header>
+    <div class="container">
+
+      <div id="levels">
+        <h1 class="select-title">Select Level</h1>
+        <button class="level easy">EASY</button>
+        <button class="level medium">MEDIUM</button>
+        <button class="level hard">HARD</button>
+      </div>
+
+      <div id="game">
+        <div class="desc">
+          <p>Fill the <strong><span id="words-amount"></span></strong> words above input within <strong>5</strong> seconds:</p>
+          <h1 class="word"></h1>
+          <input type="text" placeholder="Start typing..." autofocus>
+          <h3 class="output"></h3>
+          <h3 id="timelabel">Time left: <span id="time"></span></h3>
+          <h3>Score: <span id="score"></span></h3>
+        </div>
+      </div>
+      <div class="instruction">
+        <h4>Instructions</h4>
+        <p>Type each word in the given amount of second to score. To play again, just type the current word. Your score will reset</p>
+      </div>
+
+    </div>
+
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
